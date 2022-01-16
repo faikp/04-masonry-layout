@@ -36,17 +36,14 @@ body{
     text-align: center;
     
     transition: 0.5s;
-    animation: bg 4s linear infinite ;
+    animation: bg 4s linear infinite alternate ;
 }
 @keyframes bg {
-    0%{
-        background-position: 0% 50%;
+    from {
+        background-position: 0% 0%;
     }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
+    to {
+        background-position: 100% 100%;
     }
 }
 .container .box:hover{
